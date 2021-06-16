@@ -1,26 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component} from 'react';
 
-function App() {
+// class App extends Component {
+//   render(){
+//     return <h1>Hello, world-----pppp------</h1>;
+//   }
+// }
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-	  <h1 className="App-title">Wellcome to React======Yeee</h1>
-        <p>
-          Edit <code>Hello World</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  <div>
+    <Cat />
+    <Cat />
+    <Cat />
+    <Cat />
+  </div>
+  )
 }
 
+const Cat = () => {
+  return <div>Meow!</div>
+}
 export default App;
+
